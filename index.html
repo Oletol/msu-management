@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>English for Professional Communicators &middot; Interactive Course</title>
+<style>
+:root{--ink:#1a1a1a;--blue:#2e74b5;--dark:#1f4d78;--green:#1f6b3b;--gold:#8a6a1f;--rule:#d8dee7;--paper:#fff;--red:#8c3b3b;--bg:#eef1f5;--sidebar:#152a44;--sidebar2:#1f4066;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,"Times New Roman",serif;}
+.shell{display:flex;min-height:100vh}
+.sidebar{width:280px;flex:0 0 280px;background:var(--sidebar);color:#dfe7f0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;padding:18px 0 40px}
+.brand{font:700 1.05rem/1.3 Georgia,serif;color:#fff;padding:0 18px 14px;border-bottom:1px solid #2a4a6e;margin-bottom:10px}
+.brand small{display:block;font:400 .72rem/1.4 Georgia,serif;color:#9fb3c8;letter-spacing:.06em;text-transform:uppercase;margin-top:.3em}
+.unit-block{margin-bottom:6px}
+.unit-title{font:700 .82rem/1.3 Georgia,serif;letter-spacing:.03em;color:#fff;background:var(--sidebar2);padding:.7em 18px;margin-top:8px}
+.unit-title .soon{display:block;font:400 .68rem/1.4 Georgia,serif;color:#c7d6e6;text-transform:none;letter-spacing:0;margin-top:.2em}
+.section-list{list-style:none;margin:0;padding:0}
+.section-list li{border-bottom:1px solid #223f5f}
+.section-list a{display:block;padding:.65em 18px .65em 26px;color:#c7d6e6;text-decoration:none;font-size:.9rem}
+.section-list a:hover{background:#1c3a5c;color:#fff}
+.section-list a.active{background:#284d78;color:#fff;font-weight:700;border-left:4px solid #6fa8dc;padding-left:22px}
+.main{margin-left:280px;flex:1;min-width:0}
+.topbar{background:linear-gradient(135deg,var(--dark),var(--blue));color:#fff;padding:16px 40px}
+.topbar .k{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.topbar .t{font-size:1.35rem;font-weight:700;margin-top:.25em}
+.wrap{max-width:900px;margin:0 auto;padding:26px 40px 100px}
+.page{display:none}
+.page.show{display:block}
+h2{font-size:1.32rem;color:var(--blue);margin:1.7em 0 .5em;padding-bottom:.2em;border-bottom:2px solid var(--rule)}
+h2:first-child{margin-top:.2em}
+h3{font-size:1.02rem;color:var(--dark);margin:1.2em 0 .35em}
+p{margin:.5em 0;text-align:justify}
+.lead{font-style:italic;color:#3d4650}
+.rule{background:#fbf6ea;border-left:4px solid var(--gold);border-radius:0 6px 6px 0;padding:.75em 1.05em;margin:.8em 0;font-size:.93rem}
+.rule b{color:var(--gold)}
+.panel{border-left:4px solid var(--blue);background:#f3f7fb;padding:.8em 1.05em;margin:.9em 0;border-radius:0 6px 6px 0}
+.panel-t{font:700 .76rem/1 Georgia,serif;letter-spacing:.06em;text-transform:uppercase;color:var(--dark);margin-bottom:.4em}
+.disc{border-left-color:var(--gold);background:#fbf6ea}
+.disc .panel-t{color:var(--gold)}
+.exercise{border:1px solid var(--rule);border-radius:8px;margin:1.3em 0;overflow:hidden;background:#fff}
+.ex-h{background:#f6f8fb;padding:.6em 1em;font-weight:700;color:var(--dark)}
+.ex-b{padding:.2em 1.1em 1em}
+.rubric{font-style:italic;color:#4a535c;font-size:.92rem}
+ol.nums{padding-left:1.4em}
+ol.nums li{margin:.5em 0}
+.gap{border:none;border-bottom:1px solid var(--ink);background:#fbfdff;font:inherit;padding:1px 4px;min-width:90px}
+.gap.ok{background:#e8f6ec;border-bottom-color:var(--green);color:var(--green);font-weight:700}
+.gap.bad{background:#fbeaea;border-bottom-color:var(--red);color:var(--red)}
+select.gap{border:1px solid var(--rule);border-radius:4px;padding:2px 6px;font:inherit;background:#fbfdff}
+select.gap.ok{background:#e8f6ec;border-color:var(--green);color:var(--green);font-weight:700}
+select.gap.bad{background:#fbeaea;border-color:var(--red);color:var(--red)}
+.term-row{display:flex;align-items:center;gap:.6em;margin:.4em 0;flex-wrap:wrap}
+.term-row .term{min-width:150px;font-weight:600}
+.term-row select.gap{flex:1;min-width:260px}
+.mcq label{display:inline-block;margin-right:1em;padding:.1em .4em;border-radius:4px}
+.mcq label.ok{background:#e8f6ec;color:var(--green);font-weight:700}
+.mcq label.bad{background:#fbeaea;color:var(--red)}
+.check-row{display:flex;align-items:center;gap:1em;margin-top:.7em}
+.pdf-btn{font:700 .78rem/1 Georgia,serif;padding:.5em 1em;border:1px solid #fff;border-radius:5px;background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+.pdf-btn:hover{background:#fff;color:var(--dark)}
+.topbar-row{display:flex;align-items:center;justify-content:space-between;gap:1em;flex-wrap:wrap}
+@media print{
+  .sidebar,.pdf-btn,.topbar .k{display:none!important}
+  .main{margin-left:0}
+  .topbar{background:#fff;color:var(--ink);padding:0 0 10px;border-bottom:2px solid var(--rule)}
+  .topbar .t{color:var(--ink);font-size:1.2rem}
+  .wrap{padding:0;max-width:100%}
+  select.gap{border:1px solid #999;-webkit-appearance:none;appearance:none}
+  body{background:#fff}
+}
+.check-btn{font:700 .82rem/1 Georgia,serif;padding:.5em 1em;border:1px solid var(--blue);border-radius:5px;background:var(--blue);color:#fff;cursor:pointer}
+.check-btn:hover{background:var(--dark)}
+.score{font-size:.85rem;color:#5b6570;font-weight:700}
+table{width:100%;border-collapse:collapse;margin:.7em 0;font-size:.92rem}
+th,td{border:1px solid var(--rule);padding:.5em .7em;text-align:left;vertical-align:top}
+th{background:#f3f6fa;color:var(--dark);font-size:.8rem;text-transform:uppercase}
+.video-box{margin:1em 0}
+.video-box iframe{width:100%;aspect-ratio:16/9;border:1px solid var(--rule);border-radius:6px}
+.video-fallback{font-size:.85rem;color:#5b6570;margin-top:.3em}
+.audio-player{margin:1em 0;border:1px solid var(--rule);border-radius:8px;padding:.8em 1em;background:#f6f8fb}
+.audio-player audio{width:100%}
+.items{padding-left:1.3em}
+.items li{margin-bottom:.4em}
+.added-tag{display:inline-block;font:700 .68rem/1 Georgia,serif;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:.25em .6em;margin-bottom:.5em}
+@media (max-width:820px){.sidebar{position:static;width:100%}.main{margin-left:0}}
+</style>
+</head>
+<body>
+<div class="shell">
+<nav class="sidebar">
+  <div class="brand">English for Professional Communicators<small>Interactive course</small></div>
+
+  <div class="unit-block">
+    <div class="unit-title">Unit 1 &middot; Model of Communication</div>
+    <ul class="section-list">
+      <li><a href="#u1-warmup" data-target="u1-warmup">1. Warm-up &amp; Speaking Lead-in</a></li>
+      <li><a href="#u1-reading" data-target="u1-reading">2. Reading</a></li>
+      <li><a href="#u1-vocab" data-target="u1-vocab">3. Vocabulary Practice</a></li>
+      <li><a href="#u1-grammar" data-target="u1-grammar">4. Grammar in Use</a></li>
+      <li><a href="#u1-listening" data-target="u1-listening">5. Listening</a></li>
+      <li><a href="#u1-video" data-target="u1-video">6. Video</a></li>
+      <li><a href="#u1-speaking" data-target="u1-speaking">7. Speaking</a></li>
+      <li><a href="#u1-writing" data-target="u1-writing">8. Writing</a></li>
+      <li><a href="#u1-exam" data-target="u1-exam">9. Exam Practice</a></li>
+    </ul>
+  </div>
+
+  <div class="unit-block">
+    <div class="unit-title">Unit 2 &middot; Stakeholder Communication<span class="soon">in development</span></div>
+    <ul class="section-list"><li><a href="#u2-info" data-target="u2-info">About this unit</a></li></ul>
+  </div>
+  <div class="unit-block">
+    <div class="unit-title">Unit 3 &middot; Diplomacy and Mitigating Language<span class="soon">in development</span></div>
+    <ul class="section-list"><li><a href="#u3-info" data-target="u3-info">About this unit</a></li></ul>
+  </div>
+  <div class="unit-block">
+    <div class="unit-title">Unit 4 &middot; Crisis Communication &amp; Damage Control<span class="soon">in development</span></div>
+    <ul class="section-list"><li><a href="#u4-info" data-target="u4-info">About this unit</a></li></ul>
+  </div>
+  <div class="unit-block">
+    <div class="unit-title">Unit 5 &middot; Information Flow Models<span class="soon">in development</span></div>
+    <ul class="section-list"><li><a href="#u5-info" data-target="u5-info">About this unit</a></li></ul>
+  </div>
+  <div class="unit-block">
+    <div class="unit-title">Unit 6 &middot; Public Speaking &amp; Executive Presence<span class="soon">in development</span></div>
+    <ul class="section-list"><li><a href="#u6-info" data-target="u6-info">About this unit</a></li></ul>
+  </div>
+  <div class="unit-block">
+    <div class="unit-title">Unit 7 &middot; Intercultural &amp; Inclusive Communication<span class="soon">in development</span></div>
+    <ul class="section-list"><li><a href="#u7-info" data-target="u7-info">About this unit</a></li></ul>
+  </div>
+  <div class="unit-block">
+    <div class="unit-title">Unit 8 &middot; Persuasive Communication &amp; Policy Pitching<span class="soon">in development</span></div>
+    <ul class="section-list"><li><a href="#u8-info" data-target="u8-info">About this unit</a></li></ul>
+  </div>
+  <div class="unit-block">
+    <div class="unit-title">Unit 9 &middot; Written Communication: Guidelines &amp; SOPs<span class="soon">in development</span></div>
+    <ul class="section-list"><li><a href="#u9-info" data-target="u9-info">About this unit</a></li></ul>
+  </div>
+</nav>
+
+<div class="main">
+<div class="topbar"><div class="topbar-row"><div><div class="k">English for Professional Communicators</div><div class="t" id="topbar-title">Unit 1 &middot; Model of Communication</div></div><button class="pdf-btn" onclick="window.print()">Download this section as PDF</button></div></div>
+<div class="wrap">
+
+<!-- ===================== UNIT 1 : WARM-UP ===================== -->
+<section id="u1-warmup" class="page">
+<h2>1. Warm-up &amp; Speaking Lead-in</h2>
+<p class="lead">Before we open the text, let us activate what you already think about communication at work. The exercises below move gradually from a light discussion warm-up, to new vocabulary, to guided sentence practice, and only then to freer speaking.</p>
+
+<div class="exercise"><div class="ex-h">Exercise 1. Mingle: discussion walk</div><div class="ex-b">
+<p class="rubric">Stand up. Take one card below. Find a partner, ask your question, answer theirs, then move to a new partner and swap questions. Continue for 8&ndash;10 minutes, meeting as many classmates as possible.</p>
+<div class="added-tag">Discussion cards</div>
+<ol class="nums">
+<li>Think about the last time you received feedback from a manager, a tutor or a colleague. What made it feel constructive or unhelpful?</li>
+<li>Can a job candidate communicate confidence without saying very much? How?</li>
+<li>Is a well-written CV a form of persuasive communication? Why, or why not?</li>
+<li>Which matters more when giving critical feedback: the words you choose, or the tone you use?</li>
+<li>Do employees communicate differently with a manager than with a colleague of the same rank? How?</li>
+<li>What is the most common reason misunderstandings happen between a new employee and their team?</li>
+<li>Would you rather receive news about a promotion by email, by phone, or in a face-to-face meeting? Why?</li>
+<li>Can silence during a performance review communicate something important?</li>
+<li>Do you think body language matters more in a job interview than the answers themselves?</li>
+<li>What is one habit that makes a manager approachable?</li>
+<li>Can the layout of an office communicate something about a company's values?</li>
+<li>Do you think strong communication skills can be trained, or are some people naturally better at them?</li>
+<li>Would you rather work for someone who is extremely direct, or someone who is diplomatic but less clear?</li>
+<li>What makes an onboarding programme for new staff feel welcoming rather than confusing?</li>
+<li>Have you ever misunderstood an instruction at work or during an internship? What happened?</li>
+</ol>
+<div class="panel disc"><div class="panel-t">Whole-group follow-up</div><ul class="items">
+<li>Which question produced the most disagreement between partners?</li>
+<li>Did anyone hear an answer that changed their own opinion?</li>
+</ul></div>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Exercise 2. Vocabulary preview: describing communication style</div><div class="ex-b">
+<p class="rubric">Match each word (1&ndash;15) with its definition. Choose the correct letter from the list next to each word.</p>
+<div class="term-row"><span class="term">1. assertive</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">confident and direct, standing up for one's own views without being aggressive</option><option value="b">skilled at dealing with people and difficult situations without causing offence</option><option value="c">avoiding giving a direct or clear answer, often deliberately</option><option value="d">very direct and honest, sometimes uncomfortably so</option><option value="e">careful and sensitive when dealing with a difficult subject</option></select></div>
+<div class="term-row"><span class="term">2. diplomatic</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">very direct, sometimes in a way that seems rude</option><option value="b">skilled at dealing with people and difficult situations without causing offence</option><option value="c">able to express ideas clearly and fluently</option><option value="d">expressed in few words, without unnecessary detail</option><option value="e">using far more words than necessary</option></select></div>
+<div class="term-row"><span class="term">3. evasive</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">open to more than one interpretation, unclear</option><option value="b">open and honest, with nothing hidden</option><option value="c">avoiding giving a direct or clear answer, often deliberately</option><option value="d">honest and direct, even about difficult topics</option><option value="e">able to convince other people to agree or act</option></select></div>
+<div class="term-row"><span class="term">4. forthright</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">able to understand and share another person's feelings</option><option value="b">behaving as if one is more intelligent or important than others</option><option value="c">careful and sensitive when dealing with a difficult subject</option><option value="d">very direct and honest, sometimes uncomfortably so</option><option value="e">confident and direct, standing up for one's own views</option></select></div>
+<div class="term-row"><span class="term">5. tactful</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">very direct, sometimes in a way that seems rude</option><option value="b">expressed in few words, without unnecessary detail</option><option value="c">using far more words than necessary</option><option value="d">open to more than one interpretation, unclear</option><option value="e">careful and sensitive when dealing with a difficult subject</option></select></div>
+<div class="term-row"><span class="term">6. blunt</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">very direct, sometimes in a way that seems rude</option><option value="b">skilled at dealing with people without causing offence</option><option value="c">able to convince other people to agree or act</option><option value="d">open and honest, with nothing hidden</option><option value="e">honest and direct, even about difficult topics</option></select></div>
+<div class="term-row"><span class="term">7. articulate</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">expressed in few words, without unnecessary detail</option><option value="b">able to express ideas clearly and fluently</option><option value="c">using far more words than necessary</option><option value="d">open to more than one interpretation, unclear</option><option value="e">avoiding giving a direct or clear answer</option></select></div>
+<div class="term-row"><span class="term">8. concise</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">using far more words than necessary</option><option value="b">able to express ideas clearly and fluently</option><option value="c">expressed in few words, without unnecessary detail</option><option value="d">confident and direct, standing up for one's own views</option><option value="e">honest and direct, even about difficult topics</option></select></div>
+<div class="term-row"><span class="term">9. verbose</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">expressed in few words, without unnecessary detail</option><option value="b">open and honest, with nothing hidden</option><option value="c">careful and sensitive when dealing with a difficult subject</option><option value="d">using far more words than necessary</option><option value="e">able to convince other people to agree or act</option></select></div>
+<div class="term-row"><span class="term">10. ambiguous</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">very direct and honest, sometimes uncomfortably so</option><option value="b">skilled at dealing with people without causing offence</option><option value="c">able to understand and share another person's feelings</option><option value="d">behaving as if one is more intelligent than others</option><option value="e">open to more than one interpretation, unclear</option></select></div>
+<div class="term-row"><span class="term">11. transparent</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">open and honest, with nothing hidden</option><option value="b">expressed in few words, without unnecessary detail</option><option value="c">using far more words than necessary</option><option value="d">very direct, sometimes in a way that seems rude</option><option value="e">avoiding giving a direct or clear answer</option></select></div>
+<div class="term-row"><span class="term">12. candid</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">open to more than one interpretation, unclear</option><option value="b">honest and direct, even about difficult topics</option><option value="c">able to convince other people to agree or act</option><option value="d">skilled at dealing with people without causing offence</option><option value="e">behaving as if one is more intelligent than others</option></select></div>
+<div class="term-row"><span class="term">13. persuasive</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">open and honest, with nothing hidden</option><option value="b">very direct and honest, sometimes uncomfortably so</option><option value="c">able to convince other people to agree or act</option><option value="d">expressed in few words, without unnecessary detail</option><option value="e">careful and sensitive when dealing with a difficult subject</option></select></div>
+<div class="term-row"><span class="term">14. empathetic</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">confident and direct, standing up for one's own views</option><option value="b">using far more words than necessary</option><option value="c">honest and direct, even about difficult topics</option><option value="d">able to understand and share another person's feelings</option><option value="e">avoiding giving a direct or clear answer</option></select></div>
+<div class="term-row"><span class="term">15. condescending</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">very direct, sometimes in a way that seems rude</option><option value="b">open to more than one interpretation, unclear</option><option value="c">skilled at dealing with people without causing offence</option><option value="d">able to convince other people to agree or act</option><option value="e">behaving as if one is more intelligent or important than others</option></select></div>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Exercise 3. Guided practice: describing real situations</div><div class="ex-b">
+<p class="rubric">Complete each sentence with one word from the box. Use each word once.</p>
+<p><i>Word box:</i> assertive &middot; diplomatic &middot; evasive &middot; forthright &middot; tactful &middot; blunt &middot; articulate &middot; concise &middot; verbose &middot; ambiguous &middot; transparent &middot; candid &middot; persuasive &middot; empathetic &middot; condescending</p>
+<ol class="nums">
+<li>During the interview, the candidate gave very <input class="gap" size="14"> answers, using only a few words each time.</li>
+<li>Our HR director is famous for being extremely <input class="gap" size="12">; she always tells staff exactly what she thinks, even when it is unwelcome.</li>
+<li>A good manager needs to be <input class="gap" size="12"> enough to raise a serious performance issue without damaging an employee's confidence.</li>
+<li>He never gives a straight answer about the restructuring plans; every response feels <input class="gap" size="12">.</li>
+<li>The new team leader is remarkably <input class="gap" size="14">: she speaks fluently and explains complex ideas with ease.</li>
+<li>Employees said the announcement was <input class="gap" size="14">; nobody was sure whether the changes applied to their department.</li>
+<li>She is <input class="gap" size="14"> about her expectations, so nobody ever leaves a meeting with her confused.</li>
+<li>A skilled recruiter must be <input class="gap" size="14">, convincing top candidates to choose one offer over another.</li>
+<li>His feedback was <input class="gap" size="10"> but respectful: difficult to hear, but never unkind.</li>
+<li>An <input class="gap" size="14"> manager notices when a team member is struggling, even before they say anything.</li>
+<li>During negotiations, being too <input class="gap" size="14"> can come across as aggressive rather than confident.</li>
+<li>The report was so <input class="gap" size="12"> that readers lost the main point among unnecessary detail.</li>
+<li>Some senior staff can sound <input class="gap" size="16"> when they explain simple tasks to experienced colleagues, which damages morale.</li>
+<li>A truly <input class="gap" size="14"> leader can disagree with a colleague without making the disagreement personal.</li>
+<li>Being <input class="gap" size="14"> about a mistake, rather than hiding it, usually earns more respect from a team.</li>
+</ol>
+</div></div>
+
+<div class="panel disc"><div class="panel-t">Exercise 4. Free speaking: from words to opinions</div><ul class="items">
+<li>Using at least four adjectives from Exercise 2, describe the communication style of a manager, tutor or team leader you have worked with.</li>
+<li>Which two adjectives from the list describe the communication style you would like to develop in yourself, and why?</li>
+<li>Is it possible for the same person to be both blunt and tactful, depending on the situation? Give an example.</li>
+</ul></div>
+</section>
+
+<!-- ===================== UNIT 1 : READING ===================== -->
+<section id="u1-reading" class="page">
+<h2>2. Reading</h2>
+
+<div class="exercise" id="ex-r1"><div class="ex-h">Before you read: key terms</div><div class="ex-b">
+<p class="rubric">Match each term (1&ndash;15) with its definition. Choose the correct letter from the list next to each term. You will meet every one of these words in the text.</p>
+<div class="term-row"><span class="term">1. source</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">the participant who originates and sends a message</option><option value="b">the participant who receives and interprets a message</option><option value="c">the idea or information being communicated</option><option value="d">to turn an idea into words, symbols or signals</option><option value="e">to interpret a message that has already been sent</option></select></div>
+<div class="term-row"><span class="term">2. receiver</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">the participant who originates and sends a message</option><option value="b">the participant who receives and interprets a message</option><option value="c">information sent back to the source in response to a message</option><option value="d">the medium through which a message travels</option><option value="e">anything that interferes with the accuracy of a message</option></select></div>
+<div class="term-row"><span class="term">3. message</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">to turn an idea into words, symbols or signals</option><option value="b">to interpret a message that has already been sent</option><option value="c">the idea or information being communicated</option><option value="d">the setting, relationships and timing surrounding an exchange</option><option value="e">a formal assessment of an employee's performance</option></select></div>
+<div class="term-row"><span class="term">4. encode</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">the participant who receives and interprets a message</option><option value="b">information sent back to the source in response to a message</option><option value="c">the medium through which a message travels</option><option value="d">to turn an idea into words, symbols or signals</option><option value="e">the system of ranks and reporting lines within an organisation</option></select></div>
+<div class="term-row"><span class="term">5. decode</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">anything that interferes with the accuracy of a message</option><option value="b">a formal complaint raised by an employee</option><option value="c">the process of introducing a new employee to an organisation</option><option value="d">to turn an idea into words, symbols or signals</option><option value="e">to interpret a message that has already been sent</option></select></div>
+<div class="term-row"><span class="term">6. feedback</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">information sent back to the source in response to a message</option><option value="b">the medium through which a message travels</option><option value="c">the setting, relationships and timing surrounding an exchange</option><option value="d">anything that interferes with the accuracy of a message</option><option value="e">a formal assessment of an employee's performance</option></select></div>
+<div class="term-row"><span class="term">7. channel</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">the idea or information being communicated</option><option value="b">the medium through which a message travels</option><option value="c">the system of ranks and reporting lines within an organisation</option><option value="d">the overall level of confidence among a group of employees</option><option value="e">a formal complaint raised by an employee</option></select></div>
+<div class="term-row"><span class="term">8. context</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">information sent back to the source in response to a message</option><option value="b">the medium through which a message travels</option><option value="c">the setting, relationships and timing surrounding an exchange</option><option value="d">the process of introducing a new employee to an organisation</option><option value="e">relating to formal action taken against an employee's conduct</option></select></div>
+<div class="term-row"><span class="term">9. noise</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">the idea or information being communicated</option><option value="b">a formal assessment of an employee's performance</option><option value="c">a formal complaint raised by an employee</option><option value="d">anything that interferes with the accuracy of a message</option><option value="e">the system of ranks and reporting lines within an organisation</option></select></div>
+<div class="term-row"><span class="term">10. appraisal</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">the process of introducing a new employee to an organisation</option><option value="b">a formal complaint raised by an employee</option><option value="c">the overall level of confidence among a group of employees</option><option value="d">relating to formal action taken against an employee's conduct</option><option value="e">a formal assessment of an employee's performance</option></select></div>
+<div class="term-row"><span class="term">11. onboarding</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">the process of introducing a new employee to an organisation</option><option value="b">a formal assessment of an employee's performance</option><option value="c">a formal complaint raised by an employee</option><option value="d">the system of ranks and reporting lines within an organisation</option><option value="e">the overall level of confidence among a group of employees</option></select></div>
+<div class="term-row"><span class="term">12. grievance</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">the process of introducing a new employee to an organisation</option><option value="b">a formal complaint raised by an employee</option><option value="c">relating to formal action taken against an employee's conduct</option><option value="d">the system of ranks and reporting lines within an organisation</option><option value="e">a formal assessment of an employee's performance</option></select></div>
+<div class="term-row"><span class="term">13. disciplinary</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">a formal complaint raised by an employee</option><option value="b">the overall level of confidence among a group of employees</option><option value="c">relating to formal action taken against an employee's conduct</option><option value="d">the process of introducing a new employee to an organisation</option><option value="e">the system of ranks and reporting lines within an organisation</option></select></div>
+<div class="term-row"><span class="term">14. hierarchy</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">a formal assessment of an employee's performance</option><option value="b">relating to formal action taken against an employee's conduct</option><option value="c">the overall level of confidence among a group of employees</option><option value="d">the system of ranks and reporting lines within an organisation</option><option value="e">a formal complaint raised by an employee</option></select></div>
+<div class="term-row"><span class="term">15. morale</span><select class="gap"><option value="">choose a definition&hellip;</option><option value="a">a formal complaint raised by an employee</option><option value="b">the process of introducing a new employee to an organisation</option><option value="c">relating to formal action taken against an employee's conduct</option><option value="d">the system of ranks and reporting lines within an organisation</option><option value="e">the overall level of confidence and enthusiasm among a group of employees</option></select></div>
+</div></div>
+
+<h3>Text. Model of Communication in Personnel Management</h3>
+<p>Within any organisation, the flow of information between people follows a process that specialists in personnel management need to understand in some depth. Communication can be defined as an exchange in which one participant, the source, formulates and transmits a message, while another, the receiver, receives and interprets it. Before a message can travel from one person to another, the source must encode it, translating an idea into words, gestures or symbols; the receiver must then decode it, extracting meaning from what has arrived. The information that a receiver subsequently returns to the source, whether a nod of agreement or a written response to an appraisal, is known as feedback, and it is feedback more than anything else that allows a manager to judge whether an instruction has genuinely been understood.</p>
+<p>Messages exchanged inside an organisation may be verbal, delivered through speech or writing, or nonverbal, conveyed through gesture, posture, tone of voice or facial expression. A candidate's handshake at the start of an interview, a manager's folded arms during a difficult conversation, or the layout of an open-plan office can all communicate something before a single word is spoken, and an alert HR professional learns to read these signals as carefully as any written policy.</p>
+<p>Every message travels through a particular channel: a face-to-face conversation relies on a vocal and visual channel simultaneously, whereas a company-wide memo relies on a written, often digital, channel. The choice of channel is rarely neutral. An announcement about redundancies delivered by group email, rather than in a private meeting, communicates something about an organisation quite independently of the words the email actually contains.</p>
+<p>Communication never occurs in a vacuum: it always takes place within a context. The physical context is the literal setting of an exchange, an open-plan office or a closed meeting room; the social-psychological context comprises the organisational hierarchy and the relationships between the people involved, since an instruction from a direct line manager lands very differently from the same words spoken by a stranger from another department; and the temporal context refers to the timing of an exchange, since an appraisal held the day after a difficult quarter is received quite differently from the same appraisal held during a period of high morale.</p>
+<p>Communication tends to be effective when participants share a comparable body of experience. A newly onboarded employee, for instance, may struggle to interpret an instruction that relies entirely on internal jargon or unwritten rules that longer-serving colleagues take for granted; genuine understanding, in such cases, depends on a conscious effort from both sides to close that gap.</p>
+<p>Communication invariably produces some effect on the people who take part in it, whether a change in what they know, how they feel, or how they behave at work. When any form of interference, generally referred to as noise, enters this system, communication becomes less effective. Noise may be physical, as when a poorly worded memo is genuinely hard to read; psychological, as when personal bias colours the way a disciplinary letter is interpreted; or semantic, as when a lack of shared vocabulary, for instance around unfamiliar HR terminology, prevents two people from understanding each other at all.</p>
+
+<div class="exercise" id="ex-r2"><div class="ex-h">Work with the text: match the heading to the paragraph</div><div class="ex-b">
+<p class="rubric">Choose the correct heading for each paragraph.</p>
+<div class="term-row"><span class="term">Paragraph 1</span><select class="gap"><option value="">choose a heading&hellip;</option><option value="a">Why the channel itself sends a message</option><option value="b">Messages that need no words at all</option><option value="c">Defining the basic roles inside an exchange</option><option value="d">Timing, setting and rank all shape a message</option><option value="e">When a new employee cannot yet share the same background</option><option value="f">Three kinds of interference that weaken a message</option></select></div>
+<div class="term-row"><span class="term">Paragraph 2</span><select class="gap"><option value="">choose a heading&hellip;</option><option value="a">Why the channel itself sends a message</option><option value="b">Messages that need no words at all</option><option value="c">Defining the basic roles inside an exchange</option><option value="d">Timing, setting and rank all shape a message</option><option value="e">When a new employee cannot yet share the same background</option><option value="f">Three kinds of interference that weaken a message</option></select></div>
+<div class="term-row"><span class="term">Paragraph 3</span><select class="gap"><option value="">choose a heading&hellip;</option><option value="a">Why the channel itself sends a message</option><option value="b">Messages that need no words at all</option><option value="c">Defining the basic roles inside an exchange</option><option value="d">Timing, setting and rank all shape a message</option><option value="e">When a new employee cannot yet share the same background</option><option value="f">Three kinds of interference that weaken a message</option></select></div>
+<div class="term-row"><span class="term">Paragraph 4</span><select class="gap"><option value="">choose a heading&hellip;</option><option value="a">Why the channel itself sends a message</option><option value="b">Messages that need no words at all</option><option value="c">Defining the basic roles inside an exchange</option><option value="d">Timing, setting and rank all shape a message</option><option value="e">When a new employee cannot yet share the same background</option><option value="f">Three kinds of interference that weaken a message</option></select></div>
+<div class="term-row"><span class="term">Paragraph 5</span><select class="gap"><option value="">choose a heading&hellip;</option><option value="a">Why the channel itself sends a message</option><option value="b">Messages that need no words at all</option><option value="c">Defining the basic roles inside an exchange</option><option value="d">Timing, setting and rank all shape a message</option><option value="e">When a new employee cannot yet share the same background</option><option value="f">Three kinds of interference that weaken a message</option></select></div>
+<div class="term-row"><span class="term">Paragraph 6</span><select class="gap"><option value="">choose a heading&hellip;</option><option value="a">Why the channel itself sends a message</option><option value="b">Messages that need no words at all</option><option value="c">Defining the basic roles inside an exchange</option><option value="d">Timing, setting and rank all shape a message</option><option value="e">When a new employee cannot yet share the same background</option><option value="f">Three kinds of interference that weaken a message</option></select></div>
+</div></div>
+
+<div class="exercise" id="ex-r3"><div class="ex-h">Work with the text: multiple-choice comprehension</div><div class="ex-b">
+<p class="rubric">Choose the answer (A, B, C or D) which fits best according to the text.</p>
+<ol class="nums">
+<li>According to paragraph 1, feedback is best described as
+<div class="mcq"><label><input type="radio" name="r3q1" value="A">A the process of translating an idea into words or symbols</label>
+<label><input type="radio" name="r3q1" value="B">B information that a receiver sends back to the source</label>
+<label><input type="radio" name="r3q1" value="C">C the setting in which an exchange takes place</label>
+<label><input type="radio" name="r3q1" value="D">D interference that reduces the accuracy of a message</label></div></li>
+<li>The examples of a handshake and folded arms are used to illustrate
+<div class="mcq"><label><input type="radio" name="r3q2" value="A">A how channel choice affects a message</label>
+<label><input type="radio" name="r3q2" value="B">B how physical noise distorts communication</label>
+<label><input type="radio" name="r3q2" value="C">C how nonverbal signals communicate meaning</label>
+<label><input type="radio" name="r3q2" value="D">D how context changes over time</label></div></li>
+<li>According to paragraph 3, the choice of communication channel
+<div class="mcq"><label><input type="radio" name="r3q3" value="A">A has no real effect on how a message is received</label>
+<label><input type="radio" name="r3q3" value="B">B can itself communicate something, beyond the words used</label>
+<label><input type="radio" name="r3q3" value="C">C matters only for messages delivered in writing</label>
+<label><input type="radio" name="r3q3" value="D">D is decided mainly by the receiver, not the source</label></div></li>
+<li>The social-psychological context is described as depending mainly on
+<div class="mcq"><label><input type="radio" name="r3q4" value="A">A the physical layout of the room</label>
+<label><input type="radio" name="r3q4" value="B">B the channel through which the message travels</label>
+<label><input type="radio" name="r3q4" value="C">C the time at which the exchange occurs</label>
+<label><input type="radio" name="r3q4" value="D">D the hierarchy and relationships between participants</label></div></li>
+<li>The example of a newly onboarded employee illustrates that
+<div class="mcq"><label><input type="radio" name="r3q5" value="A">A shared experience affects how easily a message is understood</label>
+<label><input type="radio" name="r3q5" value="B">B new employees rarely misunderstand instructions</label>
+<label><input type="radio" name="r3q5" value="C">C jargon should never be used inside an organisation</label>
+<label><input type="radio" name="r3q5" value="D">D feedback is not necessary during onboarding</label></div></li>
+<li>According to the final paragraph, semantic noise is caused by
+<div class="mcq"><label><input type="radio" name="r3q6" value="A">A a badly written or illegible message</label>
+<label><input type="radio" name="r3q6" value="B">B a lack of shared vocabulary between participants</label>
+<label><input type="radio" name="r3q6" value="C">C personal bias affecting interpretation</label>
+<label><input type="radio" name="r3q6" value="D">D a disagreement about company hierarchy</label></div></li>
+</ol>
+</div></div>
+
+<div class="panel disc"><div class="panel-t">Discussion (maximum 3 questions)</div><ul class="items">
+<li>Which type of noise, physical, psychological or semantic, do you think causes the most problems in a real workplace, and why?</li>
+<li>Describe a situation in which the channel chosen for a message, rather than its content, changed how it was received.</li>
+<li>Can you think of a time when a new employee misunderstood something because of a lack of shared experience? What helped close the gap?</li>
+</ul></div>
+</section>
+
+<!-- ===================== UNIT 1 : VOCABULARY PRACTICE ===================== -->
+<section id="u1-vocab" class="page">
+<h2>3. Vocabulary Practice</h2>
+<p class="lead">These exercises help you remember the vocabulary of communication in different ways: collocation, synonymy, gapped context and idiom. Each exercise ends with two or three discussion questions that make you use the words, not just recognise them.</p>
+
+<div class="exercise"><div class="ex-h">Vocabulary Focus 1: collocations</div><div class="ex-b">
+<p class="rubric">Match each verb (1&ndash;12) with the noun it naturally combines with. Type the letter.</p>
+<ol class="nums">
+<li>send <input class="gap" size="3"></li>
+<li>receive <input class="gap" size="3"></li>
+<li>make <input class="gap" size="3"></li>
+<li>have <input class="gap" size="3"></li>
+<li>give <input class="gap" size="3"></li>
+<li>change <input class="gap" size="3"></li>
+<li>pay <input class="gap" size="3"></li>
+<li>choose <input class="gap" size="3"></li>
+<li>interpret <input class="gap" size="3"></li>
+<li>reduce <input class="gap" size="3"></li>
+<li>share <input class="gap" size="3"></li>
+<li>distort <input class="gap" size="3"></li>
+</ol>
+<p>a. an effort &middot; b. difficulty &middot; c. a message &middot; d. feedback &middot; e. behaviour &middot; f. attention &middot; g. a channel &middot; h. a signal &middot; i. the meaning &middot; j. noise &middot; k. experience &middot; l. the truth</p>
+<div class="panel disc"><div class="panel-t">Discussion</div><ul class="items">
+<li>Choose three collocations and use each in a sentence about your own group today.</li>
+<li>Which collocation is the easiest to translate directly into Russian, and which is not?</li>
+</ul></div>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Vocabulary Focus 2: synonyms</div><div class="ex-b">
+<p class="rubric">Match each word (1&ndash;12) with its closest synonym. Type the letter.</p>
+<ol class="nums">
+<li>definition <input class="gap" size="3"></li>
+<li>source <input class="gap" size="3"></li>
+<li>effort <input class="gap" size="3"></li>
+<li>occur <input class="gap" size="3"></li>
+<li>widespread <input class="gap" size="3"></li>
+<li>difficulty <input class="gap" size="3"></li>
+<li>verbal <input class="gap" size="3"></li>
+<li>intimate <input class="gap" size="3"></li>
+<li>improve <input class="gap" size="3"></li>
+<li>lessen <input class="gap" size="3"></li>
+<li>convey <input class="gap" size="3"></li>
+<li>dodge <input class="gap" size="3"></li>
+</ol>
+<p>a. attempt &middot; b. explanation &middot; c. origin &middot; d. obstacle &middot; e. happen &middot; f. common &middot; g. spoken &middot; h. reduce &middot; i. private &middot; j. make better &middot; k. avoid &middot; l. carry, transmit</p>
+<div class="panel disc"><div class="panel-t">Discussion</div><ul class="items">
+<li>Which pair of synonyms would you use in a formal report, and which in casual speech?</li>
+<li>Give an example sentence with "widespread" about something happening in your field of study.</li>
+</ul></div>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Vocabulary Focus 3: sentence gap-fill</div><div class="ex-b">
+<p class="rubric">Complete each sentence with one word from Focus 1&ndash;2 above.</p>
+<ol class="nums">
+<li>A good manager always <input class="gap" size="18"> to understand a colleague's point of view.</li>
+<li>The company's new logo is meant to <input class="gap" size="14"> a sense of trust.</li>
+<li>Some students <input class="gap" size="10"> difficulty speaking in front of a large audience.</li>
+<li>Loud background music can act as physical <input class="gap" size="12"> during a phone call.</li>
+<li>Body language is a form of nonverbal <input class="gap" size="16">.</li>
+<li>Her explanation was so <input class="gap" size="14"> that everyone understood it immediately.</li>
+<li>He tried to <input class="gap" size="14"> the client's angry email as calmly as possible.</li>
+<li>Rumours about the merger have become <input class="gap" size="14"> across the whole company.</li>
+<li>A firm handshake can <input class="gap" size="12"> confidence before a word is spoken.</li>
+<li>Please <input class="gap" size="8"> attention: this instruction will not be repeated.</li>
+<li>Without <input class="gap" size="14">, the speaker never knows whether the message got through.</li>
+<li>Reading the report twice helped to <input class="gap" size="12"> confusion about the deadline.</li>
+<li>Some topics are too <input class="gap" size="12"> to discuss with people you have just met.</li>
+<li>Regular practice will gradually <input class="gap" size="12"> your presentation skills.</li>
+<li>He always tries to <input class="gap" size="10"> difficult questions in interviews.</li>
+</ol>
+<div class="panel disc"><div class="panel-t">Discussion</div><ul class="items">
+<li>Whose sentence was closest to something that has actually happened to you?</li>
+<li>Which of these fifteen sentences would you be most likely to hear in your own department?</li>
+</ul></div>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Vocabulary Focus 4: communication idioms</div><div class="ex-b">
+<p class="rubric">Complete each idiom with one word.</p>
+<ol class="nums">
+<li>To get straight to the point: to not <input class="gap" size="8"> around the bush.</li>
+<li>To fail to notice an obvious hint: to miss the <input class="gap" size="8">.</li>
+<li>To finally understand after confusion: the penny has <input class="gap" size="10">.</li>
+<li>To discuss what everyone is avoiding: to address the <input class="gap" size="10"> in the room.</li>
+<li>To keep someone informed: to keep someone in the <input class="gap" size="8">.</li>
+<li>To deliberately not tell someone something: to keep someone in the <input class="gap" size="8">.</li>
+<li>To say exactly what you mean: to speak your <input class="gap" size="8">.</li>
+<li>To agree completely: to be on the same <input class="gap" size="8">.</li>
+<li>To understand each other perfectly: to be on the same <input class="gap" size="12">.</li>
+<li>To listen carefully and take something seriously: to take something on <input class="gap" size="8">.</li>
+<li>To repeat something so it is completely clear: to spell it <input class="gap" size="6">.</li>
+<li>To communicate without misunderstanding: to make yourself <input class="gap" size="8">.</li>
+</ol>
+<div class="panel disc"><div class="panel-t">Discussion</div><ul class="items">
+<li>Which of these expressions do you already use, in English or in Russian translation?</li>
+<li>Tell a partner about a time you were "kept in the dark" or when the penny finally "dropped" for you.</li>
+</ul></div>
+</div></div>
+</section>
+
+<!-- ===================== UNIT 1 : GRAMMAR IN USE ===================== -->
+<section id="u1-grammar" class="page">
+<h2>4. Grammar in Use</h2>
+<p class="lead">This unit's grammar strand starts with the English tense system, since the topic of communication constantly requires you to talk about habits, single events, ongoing situations and plans. Rules are given in small portions, one or two tenses at a time, and each rule is followed immediately by an exercise. This is exercise 1 of 10 in the current installment; further exercises (modals, conditionals, reported speech) will build on these in later units.</p>
+
+<h3>4.1 Present Simple and Present Continuous</h3>
+<div class="rule"><b>Rule.</b> Present Simple: habits, facts, routines, permanent situations. Signal words: usually, often, always, every day, rarely, never. Present Continuous: an action happening now or around now, a temporary situation, a changing situation. Signal words: now, at the moment, currently, these days, look/listen.</div>
+<div class="exercise"><div class="ex-h">Exercise 1. Put the verb into the correct present form</div><div class="ex-b">
+<ol class="nums">
+<li>The department <input class="gap" size="12"> (send) weekly newsletters to all staff.</li>
+<li>Look! The minister <input class="gap" size="14"> (give) a press conference right now.</li>
+<li>At the moment, the technical team <input class="gap" size="14"> (fix) a problem with the messaging system.</li>
+<li>Public officials usually <input class="gap" size="12"> (respond) to citizens' requests within ten working days.</li>
+<li>I <input class="gap" size="18"> (not understand) why the report has not been sent yet.</li>
+<li>She <input class="gap" size="14"> (write) her final assignment this week, so she is very busy.</li>
+<li>The committee <input class="gap" size="10"> (meet) every Thursday to discuss new policies.</li>
+<li>Currently, more government agencies <input class="gap" size="14"> (move) their communication online.</li>
+<li>He never <input class="gap" size="12"> (answer) emails after six in the evening.</li>
+<li>Why <input class="gap" size="18"> (you, avoid) my questions?</li>
+<li>The new policy <input class="gap" size="12"> (require) all staff to reply within 24 hours.</li>
+<li>At present, the ministry <input class="gap" size="14"> (review) its communication strategy.</li>
+<li>Communication students <input class="gap" size="14"> (study) the Shannon and Weaver model this semester.</li>
+<li>Feedback <input class="gap" size="22"> (not always improve) understanding immediately.</li>
+<li>Right now, two departments <input class="gap" size="16"> (negotiate) the terms of a joint statement.</li>
+</ol>
+</div></div>
+
+<h3>4.2 Past Simple and Present Perfect</h3>
+<div class="rule"><b>Rule.</b> Past Simple: a finished action at a stated or clearly implied time in the past. Present Perfect: a past action connected to the present, an unfinished time period, an experience, or a result that still matters now. Signal words for Present Perfect: already, just, ever, never, since, for, yet.</div>
+<div class="exercise"><div class="ex-h">Exercise 2. Put the verb into the correct form: Past Simple or Present Perfect</div><div class="ex-b">
+<ol class="nums">
+<li>The minister <input class="gap" size="20"> (already, announce) the decision, so there is no need to ask again.</li>
+<li>She <input class="gap" size="10"> (send) the report yesterday afternoon.</li>
+<li><input class="gap" size="20"> (you, ever, attend) a public hearing?</li>
+<li>We <input class="gap" size="12"> (finish) the negotiations last Friday.</li>
+<li>He <input class="gap" size="18"> (never, miss) a single deadline since he joined the department.</li>
+<li>They <input class="gap" size="10"> (sign) the agreement in 2019.</li>
+<li>I <input class="gap" size="18"> (just, receive) an important message from the head office.</li>
+<li>The team <input class="gap" size="20"> (not communicate) with the press since the scandal began.</li>
+<li>When <input class="gap" size="24"> (the government, introduce) this policy?</li>
+<li>She <input class="gap" size="12"> (work) here for three years now.</li>
+<li>We <input class="gap" size="20"> (already, discuss) this issue at the last meeting.</li>
+<li>Yesterday, the spokesperson <input class="gap" size="12"> (refuse) to comment on the rumours.</li>
+<li><input class="gap" size="16"> (you, read) the official statement yet?</li>
+<li>He <input class="gap" size="8"> (leave) the ministry in 2020 to start his own consultancy.</li>
+<li>Communication technology <input class="gap" size="14"> (change) enormously over the last decade.</li>
+</ol>
+</div></div>
+
+<h3>4.3 Past Simple and Past Continuous</h3>
+<div class="rule"><b>Rule.</b> Past Continuous: a background action in progress at a certain past moment, or two actions happening at the same time. Past Simple: a shorter, completed action, often one that interrupts the background action. Pattern: while/as + Past Continuous, Past Simple.</div>
+<div class="exercise"><div class="ex-h">Exercise 3. Put the verb into the correct form: Past Simple or Past Continuous</div><div class="ex-b">
+<ol class="nums">
+<li>While the minister <input class="gap" size="16"> (speak), a journalist <input class="gap" size="14"> (interrupt) with a question.</li>
+<li>I <input class="gap" size="14"> (write) an email when the power <input class="gap" size="8"> (go) off.</li>
+<li>They <input class="gap" size="16"> (negotiate) the contract all afternoon yesterday.</li>
+<li>She <input class="gap" size="10"> (call) me while I <input class="gap" size="14"> (drive) to the office.</li>
+<li>What <input class="gap" size="16"> (you, do) at 9 p.m. last night?</li>
+<li>He <input class="gap" size="16"> (not listen) carefully, so he missed the main point.</li>
+<li>While the committee <input class="gap" size="16"> (discuss) the budget, the chairman <input class="gap" size="12"> (receive) an urgent phone call.</li>
+<li>We <input class="gap" size="18"> (still, wait) for a reply when the office closed.</li>
+<li>As she <input class="gap" size="14"> (leave) the building, she <input class="gap" size="8"> (meet) an old colleague.</li>
+<li>The staff <input class="gap" size="16"> (prepare) the documents all morning.</li>
+<li>I <input class="gap" size="14"> (not pay) attention when he explained the new rules.</li>
+<li>While we <input class="gap" size="16"> (translate) the document, the client <input class="gap" size="10"> (send) an updated version.</li>
+<li>The phone <input class="gap" size="8"> (ring) three times during the meeting.</li>
+<li>She <input class="gap" size="14"> (talk) to a journalist when I <input class="gap" size="10"> (walk) into the room.</li>
+<li>What <input class="gap" size="14"> (happen) when the noise started?</li>
+</ol>
+</div></div>
+
+<h3>4.4 Present Perfect Simple and Present Perfect Continuous</h3>
+<div class="rule"><b>Rule.</b> Present Perfect Simple emphasises the result or how many times something happened. Present Perfect Continuous emphasises the duration of an ongoing activity, often with an unfinished feel. Compare: "I have written three reports" (result) and "I have been writing reports all morning" (duration).</div>
+<div class="exercise"><div class="ex-h">Exercise 4. Put the verb into the correct form: Present Perfect Simple or Continuous</div><div class="ex-b">
+<ol class="nums">
+<li>She <input class="gap" size="18"> (write) reports all morning; her hand is tired.</li>
+<li>He <input class="gap" size="14"> (write) three reports this morning.</li>
+<li>They <input class="gap" size="20"> (negotiate) for six hours, but they still haven't reached an agreement.</li>
+<li>I <input class="gap" size="12"> (read) your message twice already.</li>
+<li>We <input class="gap" size="18"> (wait) for a reply since Monday.</li>
+<li>How long <input class="gap" size="22"> (you, study) English?</li>
+<li>The department <input class="gap" size="20"> (already, answer) all the emails from this morning.</li>
+<li>She <input class="gap" size="16"> (work) on this project since January.</li>
+<li>He <input class="gap" size="12"> (call) me five times today.</li>
+<li>They <input class="gap" size="18"> (discuss) the same issue for an hour without progress.</li>
+<li>I <input class="gap" size="14"> (finish) the translation, so you can send it now.</li>
+<li>The minister <input class="gap" size="18"> (answer) questions for the last thirty minutes.</li>
+<li>We <input class="gap" size="16"> (never, see) such a confusing report before.</li>
+<li>The technical team <input class="gap" size="16"> (try) to fix the problem since nine o'clock.</li>
+<li>She <input class="gap" size="12"> (send) the email already; check your inbox.</li>
+</ol>
+</div></div>
+
+<h3>4.5 Future forms: will, going to, Present Continuous</h3>
+<div class="rule"><b>Rule.</b> Will: a decision made at the moment of speaking, a prediction, a promise. Going to: a plan or intention already decided, or a prediction based on present evidence. Present Continuous: a fixed arrangement with a stated time or place.</div>
+<div class="exercise"><div class="ex-h">Exercise 5. Put the verb into the correct future form</div><div class="ex-b">
+<ol class="nums">
+<li>I think communication <input class="gap" size="14"> (become) even more digital in the future.</li>
+<li>Look at those dark clouds. It <input class="gap" size="18"> (rain) soon.</li>
+<li>The minister <input class="gap" size="12"> (meet) the press at 5 p.m. tomorrow; it's already in her diary.</li>
+<li>Don't worry, I <input class="gap" size="12"> (help) you with the translation.</li>
+<li>We <input class="gap" size="18"> (launch) the new communication strategy next month.</li>
+<li>A: The phone is ringing. B: I <input class="gap" size="14"> (answer) it.</li>
+<li>They <input class="gap" size="12"> (sign) the agreement on Friday; it's confirmed.</li>
+<li>I promise I <input class="gap" size="12"> (reply) to your message as soon as possible.</li>
+<li>Based on current trends, more agencies <input class="gap" size="18"> (move) their services online.</li>
+<li>What time <input class="gap" size="22"> (the meeting, start) tomorrow?</li>
+<li>I'm sure the report <input class="gap" size="12"> (arrive) on time.</li>
+<li>She has decided: she <input class="gap" size="18"> (apply) for the communications officer position.</li>
+<li>We <input class="gap" size="12"> (have) our next lesson on Tuesday, as usual.</li>
+<li>Perhaps technology <input class="gap" size="12"> (solve) some of these communication problems one day.</li>
+<li>He has already packed his bags; he <input class="gap" size="12"> (leave) for the conference tomorrow.</li>
+</ol>
+</div></div>
+
+<h3>4.6 Mixed review</h3>
+<div class="exercise"><div class="ex-h">Exercise 6. Put the verb into the correct tense (mixed)</div><div class="ex-b">
+<ol class="nums">
+<li>Every department usually <input class="gap" size="12"> (submit) its report by Friday.</li>
+<li>At the moment, she <input class="gap" size="14"> (prepare) her speech for tomorrow.</li>
+<li>He <input class="gap" size="10"> (start) working here in 2018.</li>
+<li>While I <input class="gap" size="14"> (read) the email, my colleague <input class="gap" size="10"> (call) me.</li>
+<li>We <input class="gap" size="18"> (already, send) the invitations.</li>
+<li>She <input class="gap" size="16"> (work) on this proposal since Monday.</li>
+<li>I <input class="gap" size="10"> (call) you back later today.</li>
+<li>They <input class="gap" size="12"> (have) a press conference next week; it's already scheduled.</li>
+<li>He usually <input class="gap" size="10"> (avoid) difficult questions.</li>
+<li>Look, the director <input class="gap" size="14">! (arrive)</li>
+<li>She <input class="gap" size="10"> (finish) the report yesterday evening.</li>
+<li>How long <input class="gap" size="16"> (you, know) each other?</li>
+<li>When the phone rang, he <input class="gap" size="14"> (write) an important email.</li>
+<li>I'm sure things <input class="gap" size="12"> (improve) soon.</li>
+<li>We <input class="gap" size="18"> (never, discuss) this topic before.</li>
+</ol>
+</div></div>
+
+<h3>4.7 Prepositions after communication verbs</h3>
+<div class="rule"><b>Rule.</b> Many verbs of communication are always followed by the same preposition: depend on, listen to, respond to, agree with, communicate with, apologise for, complain about, insist on, believe in, deal with, refer to, comment on, object to, rely on, consist of. These pairs must be learned together, as a single unit.</div>
+<div class="exercise"><div class="ex-h">Exercise 7. Fill in the correct preposition</div><div class="ex-b">
+<ol class="nums">
+<li>Effective teamwork depends <input class="gap" size="6"> clear communication.</li>
+<li>Please listen carefully <input class="gap" size="6"> the instructions before you begin.</li>
+<li>The department has not yet responded <input class="gap" size="6"> our request.</li>
+<li>I completely agree <input class="gap" size="8"> your point of view.</li>
+<li>It is important to communicate clearly <input class="gap" size="8"> your colleagues.</li>
+<li>The minister apologised <input class="gap" size="6"> the delay in the response.</li>
+<li>Several citizens complained <input class="gap" size="8"> the lack of information.</li>
+<li>The committee insisted <input class="gap" size="6"> receiving a written explanation.</li>
+<li>Do you believe <input class="gap" size="6"> the effectiveness of this new policy?</li>
+<li>Our office deals <input class="gap" size="8"> all public enquiries.</li>
+<li>The report refers <input class="gap" size="6"> several earlier studies.</li>
+<li>The journalist commented <input class="gap" size="6"> the minister's speech.</li>
+<li>Some officials objected <input class="gap" size="6"> the new communication plan.</li>
+<li>We can always rely <input class="gap" size="6"> her for honest feedback.</li>
+<li>The presentation consists <input class="gap" size="6"> three main parts.</li>
+</ol>
+</div></div>
+
+<h3>4.8 Word formation</h3>
+<div class="exercise"><div class="ex-h">Exercise 8. Use the word in capitals to form a word that fits the gap</div><div class="ex-b">
+<ol class="nums">
+<li>The government values <input class="gap" size="14"> in all official communication. (TRANSPARENT)</li>
+<li>His <input class="gap" size="14"> of the policy was very clear. (EXPLAIN)</li>
+<li>The minister answered every question with surprising <input class="gap" size="12"> (HONEST)</li>
+<li>Her decision was completely <input class="gap" size="16">. (REASON)</li>
+<li>The report was written in a highly <input class="gap" size="16"> style. (PROFESSION)</li>
+<li>Public trust depends on the <input class="gap" size="14"> of official statements. (RELY)</li>
+<li>It was a genuinely <input class="gap" size="14"> campaign. (SUCCESS)</li>
+<li>The spokesperson gave a very <input class="gap" size="14"> argument. (CONVINCE)</li>
+<li>There was a clear <input class="gap" size="18"> between the two departments. (MISUNDERSTAND)</li>
+<li>His speech was <input class="gap" size="14">, and the audience applauded. (IMPRESS)</li>
+<li>The new rule caused a lot of <input class="gap" size="14"> among staff. (CONFUSE)</li>
+<li>She showed great <input class="gap" size="12"> while answering difficult questions. (PATIENT)</li>
+<li>The minister's <input class="gap" size="14"> statement calmed the public. (APOLOGY)</li>
+<li>Officials must act with complete <input class="gap" size="16">. (RESPONSIBLE)</li>
+<li>The new system is far more <input class="gap" size="12"> than the old one. (EFFICIENCY)</li>
+</ol>
+</div></div>
+
+<h3>4.9 Passive voice: an introduction</h3>
+<div class="rule"><b>Rule.</b> Passive = object + be + past participle (+ by + agent). Use the passive when the action or the receiver of the action matters more than who performed it: this is extremely common in official and administrative communication ("the report was written", "the decision has been made").</div>
+<div class="exercise"><div class="ex-h">Exercise 9. Put the verb into the correct passive form</div><div class="ex-b">
+<ol class="nums">
+<li>The new policy <input class="gap" size="14"> (announce) yesterday.</li>
+<li>All official documents <input class="gap" size="18"> (must, check) before publication.</li>
+<li>Feedback forms <input class="gap" size="12"> (send) to every participant after the seminar.</li>
+<li>The decision <input class="gap" size="10"> (make) by the committee, not by one person.</li>
+<li>This report <input class="gap" size="12"> (write) by three different departments.</li>
+<li>The conference <input class="gap" size="14"> (organise) by the ministry every year.</li>
+<li>All complaints <input class="gap" size="16"> (should, take) seriously.</li>
+<li>The letter <input class="gap" size="12"> (sign) by the director this morning.</li>
+<li>Public statements <input class="gap" size="18"> (usually, prepare) in advance.</li>
+<li>The website <input class="gap" size="12"> (update) last week.</li>
+<li>Citizens' requests <input class="gap" size="18"> (must, answer) within ten working days.</li>
+<li>The press conference <input class="gap" size="14"> (broadcast) live on television.</li>
+<li>A new communication strategy <input class="gap" size="26"> (currently, develop).</li>
+<li>The report <input class="gap" size="20"> (not, finish) yet.</li>
+<li>Important announcements <input class="gap" size="18"> (always, check) twice before release.</li>
+</ol>
+</div></div>
+
+<h3>4.10 Translation: tenses and vocabulary together</h3>
+<div class="exercise"><div class="ex-h">Exercise 10. Translate into English</div><div class="ex-b">
+<p class="rubric">Use the tenses and vocabulary from this unit. More than one correct version is possible; type your best attempt and compare it with a partner.</p>
+<ol class="nums">
+<li>Я уже отправил отчёт вчера вечером.</li>
+<li>Директор сейчас проводит пресс-конференцию.</li>
+<li>Мы работаем над этим проектом с января.</li>
+<li>Она никогда не отвечает на письма после шести.</li>
+<li>Пока я читал письмо, зазвонил телефон.</li>
+<li>Комитет уже обсудил этот вопрос.</li>
+<li>Обратная связь важна для эффективной коммуникации.</li>
+<li>Завтра министр встретится с журналистами.</li>
+<li>Новая стратегия коммуникации разрабатывается прямо сейчас.</li>
+<li>Он извинился за задержку ответа.</li>
+<li>Все официальные документы должны быть проверены.</li>
+<li>Вы когда-нибудь присутствовали на публичных слушаниях?</li>
+<li>Граждане жаловались на отсутствие информации.</li>
+<li>Эффективная команда зависит от ясной коммуникации.</li>
+<li>Я уверен, что всё скоро улучшится.</li>
+</ol>
+</div></div>
+</section>
+
+<!-- ===================== UNIT 1 : LISTENING ===================== -->
+<section id="u1-listening" class="page">
+<h2>5. Listening</h2>
+<h3>Audio 1: A day in Personnel Management</h3>
+<div class="audio-player"><audio controls preload="none" src="audio/audio-1-day-in-personnel-management.mp3"></audio><p class="rubric">If the player above does not work, the file is also here: <a href="audio/audio-1-day-in-personnel-management.mp3">audio-1-day-in-personnel-management.mp3</a></p></div>
+
+<div class="exercise"><div class="ex-h">Exercise 1. Sentence completion</div><div class="ex-b">
+<p class="rubric">Listen to Audio 1 and complete each sentence with one or two words from what you hear.</p>
+<ol class="nums">
+<li>Daniel works as a <input class="gap" size="18"> for a regional public authority.</li>
+<li>He runs an <input class="gap" size="16"> session for anyone who joined in the last fortnight.</li>
+<li>New employees often feel overwhelmed by the <input class="gap" size="16"> and the unwritten rules of the office.</li>
+<li>On Tuesday and Wednesday, he is normally occupied with <input class="gap" size="16">.</li>
+<li>He has coached more than one supervisor on how to be candid without being <input class="gap" size="16">.</li>
+<li>On Thursday, he usually deals with <input class="gap" size="16">.</li>
+<li>Last month, an employee raised a formal grievance about a <input class="gap" size="20"> letter.</li>
+<li>They agreed to rewrite the letter in more <input class="gap" size="16"> language.</li>
+<li>On Friday, Daniel tries to focus on <input class="gap" size="14">.</li>
+<li>He has worked in this role for <input class="gap" size="12"> years.</li>
+</ol>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Exercise 2. Comprehension</div><div class="ex-b">
+<p class="rubric">Listen to Audio 1 again and choose the best answer.</p>
+<ol class="nums">
+<li>Daniel tries to be transparent with new employees mainly about
+<div class="mcq"><label><input type="radio" name="a1q1" value="A">A their future salary</label>
+<label><input type="radio" name="a1q1" value="B">B who reports to whom and what is expected of them</label>
+<label><input type="radio" name="a1q1" value="C">C the history of the organisation</label>
+<label><input type="radio" name="a1q1" value="D">D the location of the nearest office</label></div></li>
+<li>According to Daniel, some managers need coaching because they are
+<div class="mcq"><label><input type="radio" name="a1q2" value="A">A too tactful when giving feedback</label>
+<label><input type="radio" name="a1q2" value="B">B unwilling to hold appraisals at all</label>
+<label><input type="radio" name="a1q2" value="C">C too blunt when giving feedback</label>
+<label><input type="radio" name="a1q2" value="D">D reluctant to read survey comments</label></div></li>
+<li>The grievance mentioned last month concerned
+<div class="mcq"><label><input type="radio" name="a1q3" value="A">A the wording of a disciplinary letter</label>
+<label><input type="radio" name="a1q3" value="B">B a missed onboarding session</label>
+<label><input type="radio" name="a1q3" value="C">C a delay in an appraisal</label>
+<label><input type="radio" name="a1q3" value="D">D a disagreement over working hours</label></div></li>
+<li>Daniel values employee feedback, even when it is uncomfortable, because it
+<div class="mcq"><label><input type="radio" name="a1q4" value="A">A always leads to a formal grievance</label>
+<label><input type="radio" name="a1q4" value="B">B shows where internal communication has become unclear</label>
+<label><input type="radio" name="a1q4" value="C">C is required by law</label>
+<label><input type="radio" name="a1q4" value="D">D is easier to act on than written feedback</label></div></li>
+<li>The main idea of the final sentence is that
+<div class="mcq"><label><input type="radio" name="a1q5" value="A">A the channel of a message matters as much as its content</label>
+<label><input type="radio" name="a1q5" value="B">B morale surveys are the most useful management tool</label>
+<label><input type="radio" name="a1q5" value="C">C onboarding is the hardest part of the job</label>
+<label><input type="radio" name="a1q5" value="D">D grievances should be avoided wherever possible</label></div></li>
+</ol>
+</div></div>
+
+<h3>Audio 2: Two colleagues discuss a difficult manager</h3>
+<div class="audio-player"><audio controls preload="none" src="audio/audio-2-difficult-manager.mp3"></audio><p class="rubric">If the player above does not work, the file is also here: <a href="audio/audio-2-difficult-manager.mp3">audio-2-difficult-manager.mp3</a></p></div>
+
+<div class="exercise"><div class="ex-h">Exercise 3. Who says it?</div><div class="ex-b">
+<p class="rubric">Listen to Audio 2 and decide which speaker says each thing: write P for Priya or T for Tom.</p>
+<ol class="nums">
+<li>Describes the new department head as incredibly assertive. <input class="gap" size="4"></li>
+<li>Says a report was called "verbose and pointless" in front of colleagues. <input class="gap" size="4"></li>
+<li>Asks whether any feedback was given about the comment. <input class="gap" size="4"></li>
+<li>Explains that they tried to be diplomatic when responding. <input class="gap" size="4"></li>
+<li>Says the manager has been more tactful since the conversation. <input class="gap" size="4"></li>
+<li>Admits to being worried about the whole department's morale. <input class="gap" size="4"></li>
+<li>Argues that being direct is sometimes the only way to fix a problem. <input class="gap" size="4"></li>
+<li>Offers to back a colleague up if the problem happens again. <input class="gap" size="4"></li>
+</ol>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Exercise 4. Comprehension</div><div class="ex-b">
+<p class="rubric">Listen to Audio 2 again and choose the best answer.</p>
+<ol class="nums">
+<li>Tom's main complaint about the new department head is that he is
+<div class="mcq"><label><input type="radio" name="a2q1" value="A">A too diplomatic to be useful</label>
+<label><input type="radio" name="a2q1" value="B">B blunt in a way that feels condescending</label>
+<label><input type="radio" name="a2q1" value="C">C unwilling to give any feedback at all</label>
+<label><input type="radio" name="a2q1" value="D">D too quiet during meetings</label></div></li>
+<li>When Tom raised the issue, he asked for feedback to be given
+<div class="mcq"><label><input type="radio" name="a2q2" value="A">A in writing only</label>
+<label><input type="radio" name="a2q2" value="B">B by a different manager</label>
+<label><input type="radio" name="a2q2" value="C">C in private rather than in front of colleagues</label>
+<label><input type="radio" name="a2q2" value="D">D only once a year, during appraisals</label></div></li>
+<li>According to Tom, the manager's behaviour may be explained by
+<div class="mcq"><label><input type="radio" name="a2q3" value="A">A a lack of interest in the department</label>
+<label><input type="radio" name="a2q3" value="B">B coming from a very different workplace culture</label>
+<label><input type="radio" name="a2q3" value="C">C poor English language skills</label>
+<label><input type="radio" name="a2q3" value="D">D a recent disciplinary issue of his own</label></div></li>
+<li>Priya offers to
+<div class="mcq"><label><input type="radio" name="a2q4" value="A">A raise a formal grievance on Tom's behalf</label>
+<label><input type="radio" name="a2q4" value="B">B support Tom if the problem happens again</label>
+<label><input type="radio" name="a2q4" value="C">C ask for the manager to be replaced</label>
+<label><input type="radio" name="a2q4" value="D">D arrange an onboarding session for the manager</label></div></li>
+</ol>
+</div></div>
+
+<div class="panel disc"><div class="panel-t">Discussion (maximum 3 questions)</div><ul class="items">
+<li>Do you think Tom handled the situation well? What, if anything, would you have done differently?</li>
+<li>Is it ever acceptable to give critical feedback in front of other colleagues? Why, or why not?</li>
+<li>Which of the two recordings felt closer to a situation you have experienced or can imagine experiencing?</li>
+</ul></div>
+</section>
+
+<!-- ===================== UNIT 1 : VIDEO ===================== -->
+<section id="u1-video" class="page">
+<h2>6. Video</h2>
+<p class="lead">Three short talks, each looked at from a slightly different angle: the underlying model, the skill of listening, and the skill of speaking. Preview each video before class, since online content can change.</p>
+
+<h3>Video 1: The Communication Process Explained</h3>
+<div class="video-box"><iframe src="https://rutube.ru/play/embed/18be7d8de5905bd1991e7d353b543e21?p=WVIFrbhCiQtISfzIO8_6KQ" title="The Communication Process Explained" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe></div><p class="video-fallback">If the video above does not play, open it directly: <a href="https://rutube.ru/video/private/18be7d8de5905bd1991e7d353b543e21/?p=WVIFrbhCiQtISfzIO8_6KQ" target="_blank" rel="noopener">rutube.ru &ndash; The Communication Process Explained</a></p>
+<div class="exercise"><div class="ex-h">Exercise 1. True or false</div><div class="ex-b">
+<ol class="nums">
+<li>The video presents the model as closely related to the ideas already covered in this unit's reading text.
+<div class="mcq"><label><input type="radio" name="v1q1" value="T">True</label><label><input type="radio" name="v1q1" value="F">False</label></div></li>
+<li>The speaker names the source, the message, the channel, the receiver and feedback as parts of the process.
+<div class="mcq"><label><input type="radio" name="v1q2" value="T">True</label><label><input type="radio" name="v1q2" value="F">False</label></div></li>
+<li>According to the video, noise can only affect a message while it is inside the channel.
+<div class="mcq"><label><input type="radio" name="v1q3" value="T">True</label><label><input type="radio" name="v1q3" value="F">False</label></div></li>
+<li>The model discussed is associated with the names Shannon and Weaver.
+<div class="mcq"><label><input type="radio" name="v1q4" value="T">True</label><label><input type="radio" name="v1q4" value="F">False</label></div></li>
+<li>The video claims that feedback is optional and rarely improves communication.
+<div class="mcq"><label><input type="radio" name="v1q5" value="T">True</label><label><input type="radio" name="v1q5" value="F">False</label></div></li>
+<li>Encoding and decoding are both mentioned as necessary steps in the process.
+<div class="mcq"><label><input type="radio" name="v1q6" value="T">True</label><label><input type="radio" name="v1q6" value="F">False</label></div></li>
+</ol>
+</div></div>
+<div class="panel disc"><div class="panel-t">Discussion</div><ul class="items">
+<li>Does the video add anything to the reading text, or does it mostly repeat the same ideas in a different form?</li>
+</ul></div>
+
+<h3>Video 2: Ten ways to have a better conversation</h3>
+<div class="video-box"><iframe src="https://rutube.ru/play/embed/24510ddc8893dd0738c55871058c7c84?p=ogwBuV5yHgpQyif56qG56w" title="10 ways to have a better conversation" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe></div><p class="video-fallback">If the video above does not play, open it directly: <a href="https://rutube.ru/video/private/24510ddc8893dd0738c55871058c7c84/?p=ogwBuV5yHgpQyif56qG56w" target="_blank" rel="noopener">rutube.ru &ndash; 10 ways to have a better conversation</a></p>
+<div class="exercise"><div class="ex-h">Exercise 2. Note completion</div><div class="ex-b">
+<p class="rubric">Watch the video and complete each rule with the missing word.</p>
+<ol class="nums">
+<li>Don't <input class="gap" size="14">: give the conversation your full attention.</li>
+<li>Don't <input class="gap" size="14">: be ready to learn something from the other person.</li>
+<li>Use <input class="gap" size="16">-ended questions rather than ones with a simple yes or no answer.</li>
+<li>Go with the <input class="gap" size="10"> of the conversation instead of holding on to your own thoughts.</li>
+<li>If you don't know something, say that you don't <input class="gap" size="12">.</li>
+<li>Don't <input class="gap" size="14"> your experience with someone else's; every experience is different.</li>
+<li>Try not to <input class="gap" size="12"> yourself.</li>
+<li>Leave out unnecessary <input class="gap" size="14"> and stay focused on the main point.</li>
+<li>The final and, according to the speaker, most important rule is to <input class="gap" size="14">.</li>
+</ol>
+</div></div>
+<div class="exercise"><div class="ex-h">Exercise 3. Applying the rules</div><div class="ex-b">
+<p class="rubric">For each workplace situation, choose the rule from Exercise 2 that would help most, and be ready to explain your choice.</p>
+<ol class="nums">
+<li>A colleague keeps checking their phone while you are explaining an urgent problem.</li>
+<li>During an appraisal, a manager keeps comparing an employee's situation to their own early career.</li>
+<li>An HR officer is not sure how a new policy will be received, but answers every question with total confidence anyway.</li>
+<li>A team meeting runs over time because one person keeps adding extra detail to every point.</li>
+<li>An interviewer only asks questions that can be answered with "yes" or "no".</li>
+</ol>
+</div></div>
+
+<h3>Video 3: How to speak so that people want to listen</h3>
+<div class="video-box"><iframe src="https://rutube.ru/play/embed/494e89aca2f6233b6431514723c29468?p=FpbaigR39Ymwg6G0uBzRUQ" title="How to speak so that people want to listen" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe></div><p class="video-fallback">If the video above does not play, open it directly: <a href="https://rutube.ru/video/private/494e89aca2f6233b6431514723c29468/?p=FpbaigR39Ymwg6G0uBzRUQ" target="_blank" rel="noopener">rutube.ru &ndash; How to speak so that people want to listen</a></p>
+<div class="exercise"><div class="ex-h">Exercise 4. Comprehension</div><div class="ex-b">
+<ol class="nums">
+<li>According to the speaker, which of these is NOT one of the habits that make people stop listening?
+<div class="mcq"><label><input type="radio" name="v3q1" value="A">A gossip</label>
+<label><input type="radio" name="v3q1" value="B">B judging</label>
+<label><input type="radio" name="v3q1" value="C">C asking questions</label>
+<label><input type="radio" name="v3q1" value="D">D complaining</label></div></li>
+<li>The four positive qualities the speaker recommends instead can be remembered by the word
+<div class="mcq"><label><input type="radio" name="v3q2" value="A">A HAIL</label>
+<label><input type="radio" name="v3q2" value="B">B TRUST</label>
+<label><input type="radio" name="v3q2" value="C">C CLEAR</label>
+<label><input type="radio" name="v3q2" value="D">D OPEN</label></div></li>
+<li>The speaker suggests that varying pace and using silence can help a speaker to
+<div class="mcq"><label><input type="radio" name="v3q3" value="A">A speak for a shorter time overall</label>
+<label><input type="radio" name="v3q3" value="B">B emphasise important points and hold attention</label>
+<label><input type="radio" name="v3q3" value="C">C avoid difficult questions</label>
+<label><input type="radio" name="v3q3" value="D">D sound more formal</label></div></li>
+</ol>
+</div></div>
+<div class="panel disc"><div class="panel-t">Discussion (maximum 3 questions)</div><ul class="items">
+<li>Which of the seven habits mentioned in Video 3 do you notice most often in yourself or in others?</li>
+<li>How could a manager apply the ideas from Video 2 during a difficult appraisal conversation?</li>
+<li>Having seen all three videos, which single piece of advice would you most want a new manager to follow?</li>
+</ul></div>
+</section>
+
+<!-- ===================== UNIT 1 : SPEAKING ===================== -->
+<section id="u1-speaking" class="page">
+<h2>7. Speaking</h2>
+<p class="lead">Before the timed speaking tasks, these two exercises give you ready-made phrases so that the pressure of speaking is not combined with the pressure of finding words.</p>
+
+<div class="exercise"><div class="ex-h">Speaking Focus 1: language for comparing photographs</div><div class="ex-b">
+<p class="rubric">Complete each sentence starter with a suitable ending from the box, then practise saying the full sentences aloud.</p>
+<p><i>Box:</i> both people seem to be concentrating &middot; the first photo looks more formal than the second &middot; they might be discussing something urgent &middot; I imagine the atmosphere is quite relaxed &middot; one obvious similarity is that everyone is looking at the same screen &middot; it's hard to be sure, but perhaps they have just received some good news</p>
+<ol class="nums">
+<li>In the first photograph, <input class="gap" size="46"></li>
+<li>Compared with the first, <input class="gap" size="46"></li>
+<li>Judging by their expressions, <input class="gap" size="46"></li>
+<li>In the second photo, <input class="gap" size="46"></li>
+<li>Looking at both photos together, <input class="gap" size="46"></li>
+<li>Given how they are smiling, <input class="gap" size="46"></li>
+</ol>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Speaking Focus 2: functions for discussion</div><div class="ex-b">
+<p class="rubric">Match each phrase (1&ndash;12) with its function. Type the letter.</p>
+<ol class="nums">
+<li>"I see what you mean, but..." <input class="gap" size="3"></li>
+<li>"That's a fair point." <input class="gap" size="3"></li>
+<li>"Could you say a bit more about that?" <input class="gap" size="3"></li>
+<li>"I'm not sure I agree, actually." <input class="gap" size="3"></li>
+<li>"From my point of view..." <input class="gap" size="3"></li>
+<li>"Shall we move on to the next one?" <input class="gap" size="3"></li>
+<li>"What do you think about...?" <input class="gap" size="3"></li>
+<li>"Absolutely, I couldn't agree more." <input class="gap" size="3"></li>
+<li>"On the other hand..." <input class="gap" size="3"></li>
+<li>"Sorry, could you repeat that?" <input class="gap" size="3"></li>
+<li>"So, to sum up..." <input class="gap" size="3"></li>
+<li>"I'd say the most important one is..." <input class="gap" size="3"></li>
+</ol>
+<p>a. agreeing &middot; b. giving an opinion &middot; c. disagreeing politely / contrasting &middot; d. disagreeing directly &middot; e. asking for clarification &middot; f. moving the discussion on &middot; g. inviting someone else's opinion &middot; h. summarising</p>
+<div class="panel disc"><div class="panel-t">Discussion</div><ul class="items">
+<li>Which two or three of these phrases do you find hardest to use naturally in real time?</li>
+<li>Practise a 30-second exchange with a partner using at least four different phrases from the list.</li>
+</ul></div>
+</div></div>
+
+<div class="panel"><div class="panel-t">Part 2: individual long turn (1 minute)</div><p>Compare two contrasting photographs of people communicating, for example a face-to-face team meeting and a video call, and say what you think the people are finding easy or difficult about communicating in each situation. Use at least three phrases from Speaking Focus 1.</p></div>
+<div class="panel"><div class="panel-t">Part 3: collaborative task (2 + 1 minutes)</div><p>In groups of three, discuss how useful each of these is for good communication, then agree on the three most important: using clear, simple language; asking questions to check understanding; paying attention to body language; choosing the right moment and place; giving honest feedback; being aware of cultural differences; keeping messages short; repeating important information; matching your tone to the situation; allowing time for the other person to respond.</p></div>
+<div class="panel disc"><div class="panel-t">Part 4: discussion</div><ul class="items">
+<li>Do you think technology has made communication easier or more difficult overall?</li>
+<li>Is it possible to be a good communicator in one language but not in another?</li>
+<li>How important is feedback in a classroom, compared with a workplace?</li>
+<li>Should public administration officials be trained specifically in communication skills?</li>
+</ul></div>
+</section>
+
+<!-- ===================== UNIT 1 : WRITING ===================== -->
+<section id="u1-writing" class="page">
+<h2>8. Writing</h2>
+<p class="lead">This unit's writing strand does not ask you to produce a finished piece of writing yet. Instead, it builds the two most basic skills a writer needs: recognising the sentence that carries the main idea of a paragraph, and using punctuation correctly.</p>
+
+<h3>8.1 The topic sentence</h3>
+<div class="rule"><b>Rule.</b> A topic sentence states the main idea of a paragraph; the other sentences support it with detail, example or explanation. In English academic writing, the topic sentence is usually, though not always, the first sentence of the paragraph.</div>
+<div class="exercise"><div class="ex-h">Exercise 1. Identify the topic sentence</div><div class="ex-b">
+<p class="rubric">Each short paragraph below has three sentences. Type 1, 2 or 3 to show which sentence is the topic sentence.</p>
+<ol class="nums">
+<li>(1) Public officials increasingly rely on social media to reach citizens. (2) A city council in one region, for example, now answers most enquiries through a messaging app. (3) This shift has reduced waiting times for residents significantly. <input class="gap" size="3"></li>
+<li>(1) Feedback comes in many forms, from a simple nod to a detailed written report. (2) Communication is far more difficult without feedback of any kind. (3) A manager who never hears from their team, for instance, cannot know if instructions were understood. <input class="gap" size="3"></li>
+<li>(1) One department sends handwritten thank-you notes to citizens who report problems. (2) Another posts weekly video updates online. (3) Public bodies are finding increasingly creative ways to communicate with the people they serve. <input class="gap" size="3"></li>
+<li>(1) Noise, both literal and figurative, is one of the biggest obstacles to clear communication. (2) A noisy office can make phone calls almost impossible. (3) Personal bias can distort a message just as effectively as background noise. <input class="gap" size="3"></li>
+<li>(1) A colleague once sent an urgent report to the wrong department entirely. (2) Even experienced professionals sometimes choose the wrong communication channel for a message. (3) The mistake delayed an important decision by almost a week. <input class="gap" size="3"></li>
+</ol>
+</div></div>
+
+<h3>8.2 Punctuation: commas</h3>
+<div class="rule"><b>Rule.</b> Use a comma: (1) between items in a list of three or more; (2) before a coordinating conjunction (and, but, so, or) that joins two complete sentences; (3) after an introductory word or phrase (however, for example, at the meeting); (4) around extra, non-essential information in the middle of a sentence.</div>
+<div class="exercise"><div class="ex-h">Exercise 2. Insert the missing commas</div><div class="ex-b">
+<p class="rubric">Type the sentence with commas added in the correct places.</p>
+<ol class="nums">
+<li>She checked her email answered three phone calls and prepared a short report. <input class="gap" size="60"></li>
+<li>The report was late but nobody complained about it. <input class="gap" size="55"></li>
+<li>However the department decided to change its policy. <input class="gap" size="55"></li>
+<li>Anna who has worked here for four years knows the system very well. <input class="gap" size="70"></li>
+<li>For example a single misunderstanding can escalate quickly. <input class="gap" size="60"></li>
+<li>We need to check the facts confirm the sources and publish the statement. <input class="gap" size="75"></li>
+<li>The minister who rarely gives interviews agreed to speak to us. <input class="gap" size="65"></li>
+<li>The team worked all night so the report was ready by morning. <input class="gap" size="65"></li>
+</ol>
+<p class="rubric">The checker compares your whole sentence, so small differences in wording will be marked as incorrect; discuss any disagreement with your teacher rather than relying on the checker alone for this exercise.</p>
+</div></div>
+</section>
+
+<!-- ===================== UNIT 1 : EXAM PRACTICE ===================== -->
+<section id="u1-exam" class="page">
+<h2>9. Exam Practice</h2>
+<p class="lead">A short mixed practice set reviewing the vocabulary and grammar of this unit.</p>
+
+<div class="exercise"><div class="ex-h">Part 1 format: multiple-choice cloze</div><div class="ex-b">
+<p class="rubric">Read the text and choose the best word for each gap.</p>
+<p>Effective communication does not (1) <input class="gap" size="4"> by chance; it results from a conscious effort. Before sending a message, a competent communicator must (2) <input class="gap" size="4"> into account the audience and the context. A message that is clear in one context may (3) <input class="gap" size="4"> confusion in another. Professionals are increasingly trained to (4) <input class="gap" size="4"> attention to nonverbal cues. Feedback plays a (5) <input class="gap" size="4"> role: without it, a source cannot know whether a message was understood. Small misunderstandings can quickly (6) <input class="gap" size="4"> into serious conflicts. Organisations that pay attention to both sending and receiving can (7) <input class="gap" size="4"> a culture of open communication, which in turn (8) <input class="gap" size="4"> public trust.</p>
+<table><tbody>
+<tr><td>1</td><td>A happen</td><td>B occur</td><td>C rise</td><td>D fall</td></tr>
+<tr><td>2</td><td>A take</td><td>B keep</td><td>C hold</td><td>D put</td></tr>
+<tr><td>3</td><td>A make</td><td>B cause</td><td>C do</td><td>D perform</td></tr>
+<tr><td>4</td><td>A do</td><td>B pay</td><td>C make</td><td>D hold</td></tr>
+<tr><td>5</td><td>A vital</td><td>B big</td><td>C great</td><td>D grand</td></tr>
+<tr><td>6</td><td>A escalate</td><td>B raise</td><td>C rise</td><td>D increase</td></tr>
+<tr><td>7</td><td>A foster</td><td>B feed</td><td>C rise</td><td>D born</td></tr>
+<tr><td>8</td><td>A strengthens</td><td>B strengthen</td><td>C strong</td><td>D strength</td></tr>
+</tbody></table>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Part 2 format: open cloze</div><div class="ex-b">
+<p class="rubric">Read the text and think of the word which best fits each gap. Use only one word per gap.</p>
+<p>Communication (1) <input class="gap" size="8"> generally considered effective when participants share a similar body of experience. A message may be verbal, (2) <input class="gap" size="8"> we speak or write, or nonverbal, when we rely on gesture. Every message travels through a channel, (3) <input class="gap" size="8"> as speech or a screen. Communication never occurs (4) <input class="gap" size="8"> a vacuum; it always takes place within a context. When any kind (5) <input class="gap" size="8"> interference enters the system, communication becomes less effective. Feedback is important because, (6) <input class="gap" size="8"> it, a source has no way of knowing whether a message (7) <input class="gap" size="8"> been understood. This is (8) <input class="gap" size="8"> professionals are trained to pay close attention to nonverbal cues as well as to words.</p>
+</div></div>
+
+<div class="exercise"><div class="ex-h">Part 4 format: key word transformation</div><div class="ex-b">
+<p class="rubric">Complete the second sentence using the word given, so that it means the same as the first. Use between two and five words.</p>
+<ol class="nums">
+<li>It is important to try hard to understand a different point of view. <b>EFFORT</b><br>It is important to <input class="gap" size="20"> understand a different point of view.</li>
+<li>I stopped writing formal letters when I started using email at work. <b>USED</b><br>I <input class="gap" size="18"> formal letters before I started using email at work.</li>
+<li>Maria finds it hard to give a presentation without notes. <b>DIFFICULTY</b><br>Maria <input class="gap" size="20"> a presentation without notes.</li>
+<li>The last time the team communicated by phone was in March. <b>SINCE</b><br>The team <input class="gap" size="20"> by phone since March.</li>
+<li>Communication cannot be effective if there is no feedback. <b>UNLESS</b><br>Communication cannot be effective <input class="gap" size="18"> is provided.</li>
+<li>Michael's presentation skills have improved a great deal since last year. <b>BETTER</b><br>Michael <input class="gap" size="20"> presenting than he was last year.</li>
+</ol>
+</div></div>
+</section>
+
+<!-- ===================== UNIT 2 STUB ===================== -->
+<section id="u2-info" class="page">
+<h2>Unit 2 &middot; Stakeholder Communication</h2>
+<p class="lead">This unit is in development. It will follow the same structure as Unit 1 (Warm-up, Reading, Vocabulary Practice, Grammar in Use, Listening, Video, Speaking, Writing, Exam Practice) and will build directly on the model of communication studied here, applying it to identifying, mapping and communicating with different stakeholder groups.</p>
+</section>
+
+<section id="u3-info" class="page">
+<h2>Unit 3 &middot; Diplomacy and Mitigating Language</h2>
+<p class="lead">This unit is in development. It will focus on softening and hedging language, indirect requests, and the vocabulary of tact introduced informally in Unit 1's Warm-up section.</p>
+</section>
+
+<section id="u4-info" class="page">
+<h2>Unit 4 &middot; Crisis Communication &amp; Damage Control</h2>
+<p class="lead">This unit is in development. It will cover communicating under pressure, managing rumours and misinformation as a form of noise, and drafting rapid official statements.</p>
+</section>
+
+<section id="u5-info" class="page">
+<h2>Unit 5 &middot; Information Flow Models</h2>
+<p class="lead">This unit is in development. It will return to the model of communication from Unit 1 and extend it to formal and informal information flow within organisations, including upward, downward and lateral communication.</p>
+</section>
+
+<section id="u6-info" class="page">
+<h2>Unit 6 &middot; Public Speaking &amp; Executive Presence</h2>
+<p class="lead">This unit is in development. It will build on the speaking scaffolding introduced in Unit 1, moving from short structured turns towards longer, more autonomous presentations.</p>
+</section>
+
+<section id="u7-info" class="page">
+<h2>Unit 7 &middot; Intercultural &amp; Inclusive Communication</h2>
+<p class="lead">This unit is in development. It will examine how context, covered in Unit 1's reading text, varies across cultures and teams, and how to adapt a message accordingly.</p>
+</section>
+
+<section id="u8-info" class="page">
+<h2>Unit 8 &middot; Persuasive Communication &amp; Policy Pitching</h2>
+<p class="lead">This unit is in development. It will draw on the persuasive vocabulary introduced in Unit 1 and extend it to structuring and delivering a policy pitch.</p>
+</section>
+
+<section id="u9-info" class="page">
+<h2>Unit 9 &middot; Written Communication: Guidelines &amp; SOPs</h2>
+<p class="lead">This unit is in development. It will extend the writing strand begun in Unit 1 (the topic sentence, punctuation) towards drafting clear guidelines and standard operating procedures.</p>
+</section>
+
+</div>
+</div>
+</div>
+
+<script>
+
+var TITLES = {
+  'u1-warmup':['Unit 1 &middot; Model of Communication','1. Warm-up & Speaking Lead-in'],
+  'u1-reading':['Unit 1 &middot; Model of Communication','2. Reading'],
+  'u1-vocab':['Unit 1 &middot; Model of Communication','3. Vocabulary Practice'],
+  'u1-grammar':['Unit 1 &middot; Model of Communication','4. Grammar in Use'],
+  'u1-listening':['Unit 1 &middot; Model of Communication','5. Listening'],
+  'u1-video':['Unit 1 &middot; Model of Communication','6. Video'],
+  'u1-speaking':['Unit 1 &middot; Model of Communication','7. Speaking'],
+  'u1-writing':['Unit 1 &middot; Model of Communication','8. Writing'],
+  'u1-exam':['Unit 1 &middot; Model of Communication','9. Exam Practice'],
+  'u2-info':['Unit 2 &middot; Stakeholder Communication','About this unit'],
+  'u3-info':['Unit 3 &middot; Diplomacy and Mitigating Language','About this unit'],
+  'u4-info':['Unit 4 &middot; Crisis Communication & Damage Control','About this unit'],
+  'u5-info':['Unit 5 &middot; Information Flow Models','About this unit'],
+  'u6-info':['Unit 6 &middot; Public Speaking & Executive Presence','About this unit'],
+  'u7-info':['Unit 7 &middot; Intercultural & Inclusive Communication','About this unit'],
+  'u8-info':['Unit 8 &middot; Persuasive Communication & Policy Pitching','About this unit'],
+  'u9-info':['Unit 9 &middot; Written Communication: Guidelines & SOPs','About this unit']
+};
+
+function showPage(id){
+  if(!document.getElementById(id)) id = 'u1-warmup';
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('show'); });
+  document.getElementById(id).classList.add('show');
+  document.querySelectorAll('.section-list a').forEach(function(a){ a.classList.remove('active'); });
+  var link = document.querySelector('.section-list a[data-target="'+id+'"]');
+  if(link) link.classList.add('active');
+  var t = TITLES[id];
+  if(t) document.getElementById('topbar-title').innerHTML = t[1];
+  window.scrollTo(0,0);
+}
+function initRoute(){
+  var id = location.hash.replace('#','') || 'u1-warmup';
+  showPage(id);
+}
+window.addEventListener('hashchange', initRoute);
+window.addEventListener('DOMContentLoaded', initRoute);
+document.querySelectorAll('.section-list a').forEach(function(a){
+  a.addEventListener('click', function(){ setTimeout(initRoute, 0); });
+});
+</script>
+</body></html>
